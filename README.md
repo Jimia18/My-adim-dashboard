@@ -22,10 +22,10 @@ On macOS/Linux, use `cp .env.example .env` instead of `copy`.
 Backend: http://127.0.0.1:5000
 
 Default admin (development only):
-- Email: `admin@example.com`
-- Password: `ChangeMe123!`
+- Email: `jimiakideni@gmail.com`
+- Password: `ChangeMe123`
 
-Set `ADMIN_EMAIL`, `ADMIN_PASSWORD`, and `SECRET_KEY` in `backend/.env` before first run. Change the sample credentials before exposing the app publicly. The first admin is created automatically if no admin exists.
+Set `ADMIN_EMAIL`, `ADMIN_PASSWORD`, and `SECRET_KEY` in `backend/.env` before first run. Change the sample credentials before exposing the app publicly. The first admin is created automatically if no admin exists; changing these values later does not update an existing admin or its password in the database.
 
 ## 2. Run React frontend
 Open a second terminal:

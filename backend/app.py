@@ -123,8 +123,8 @@ def init_db():
     with app.app_context():
         db.create_all()
         if not Admin.query.first():
-            email = os.getenv("ADMIN_EMAIL", "admin@example.com").strip().lower()
-            password = os.getenv("ADMIN_PASSWORD", "ChangeMe123!")
+            email = os.getenv("ADMIN_EMAIL", "jimiakideni@gmail.com").strip().lower()
+            password = os.getenv("ADMIN_PASSWORD", "ChangeMe123")
             db.session.add(Admin(email=email, password_hash=generate_password_hash(password)))
         if not Profile.query.first():
             db.session.add(Profile(full_name="Your Name", title="Software Developer",

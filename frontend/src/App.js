@@ -445,4 +445,3 @@ export default function App() {
     {toast && <div className={`toast toast-${toast.type}`}><span className="toast-symbol">{toast.type === "error" ? <X size={16} /> : <Check size={16} />}</span>{toast.message}<button className="icon-button" onClick={() => setToast(null)}><X size={15} /></button></div>}
   </div>;
 }
-   
